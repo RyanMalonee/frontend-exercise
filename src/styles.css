@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #d75427;
+  --white: #fff;
+  --black: #000;
+  --grey: #f3f3f3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.header {
+  color: var(--primary-color);
+  font-size: 2.2em;
+}
+
+.questionAnswer {
+  background-color: var(--primary-color);
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.questionText {
+  padding: 15px;
+  font-size: 1.6em;
+  color: var(--grey);
+}
+
+.label {
+  text-align: center;
+  width: 100px;
+  margin-top: 5px;
+}
+
+.radio {
+  max-width: 50px;
+  min-width: 15px;
+}
+
+.answerOptions {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.button {
+  margin: 30px;
+  background-color: var(--white); /* Use white for the button background */
+  color: var(--primary-color); /* Text in primary color for a cohesive look */
+  padding: 12px 24px; /* Larger padding for better spacing */
+  border: 2px solid var(--primary-color); /* Add primary color border for emphasis */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.button:hover {
+  background-color: var(
+    --primary-color
+  ); /* Change background to primary color on hover */
+  color: var(--white); /* Invert the text color on hover */
+  transform: scale(1.05); /* Add a subtle zoom effect */
+}
+
+.button:active {
+  transform: scale(0.98); /* Slight shrink on click */
+}
