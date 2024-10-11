@@ -21,13 +21,20 @@
     </div>
   </div>
   <div v-else>
-    <h2>Quiz Complete!</h2>
-    <h3>Results:</h3>
-    <ul>
-      <li v-for="(answer, index) in answers" :key="index">
-        {{ questions[index].text }}: {{ answer }}
-      </li>
-    </ul>
+    <h1 class="header">Cognito Forms Quiz</h1>
+    <h2 class="subheader">Quiz Complete!</h2>
+    <div class="questionAnswer">
+      <h3 class="white">Results:</h3>
+      <ul>
+        <li
+          class="white noPoint"
+          v-for="(answer, index) in answers"
+          :key="index"
+        >
+          {{ questions[index].text }}: {{ answer }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

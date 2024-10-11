@@ -18,6 +18,10 @@ body {
   font-size: 2.2em;
 }
 
+.subheader {
+  color: var(--primary-color);
+}
+
 .questionAnswer {
   background-color: var(--primary-color);
   width: 50%;
@@ -36,6 +40,7 @@ body {
   text-align: center;
   width: 100px;
   margin-top: 5px;
+  color: var(--white);
 }
 
 .radio {
@@ -72,4 +77,13 @@ body {
 
 .button:active {
   transform: scale(0.98); /* Slight shrink on click */
+}
+
+.white {
+  color: var(--white);
+}
+
+.noPoint {
+  list-style: none;
+  padding: 5px 0;
 }
